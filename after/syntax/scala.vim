@@ -31,9 +31,12 @@ endif
 
 syntax match scalaNiceOperator "<-" conceal cchar=←
 syntax match scalaNiceOperator "->" conceal cchar=→
+syntax match scalaNiceOperator "===" conceal cchar=≡
 syntax match scalaNiceOperator "==" conceal cchar=≟
 syntax match scalaNiceOperator "!=" conceal cchar=≠
 syntax match scalaNiceOperator ">>" conceal cchar=»
+syntax match scalaNiceOperator "&&" conceal cchar=∧
+syntax match scalaNiceOperator "||" conceal cchar=∨
 
 let s:extraConceal = 1
 " Some windows font don't support some of the characters,
@@ -64,16 +67,12 @@ if s:extraConceal
     syntax match hs_DeclareFunction /^[a-z_(]\S*\(\s\|\n\)*::/me=e-2 nextgroup=scalaNiceOperator contains=hs_FunctionName,hs_OpFunctionName
     syntax match scalaNiceOperator "\:\:" conceal cchar=∷
 
-    syntax match hsniceoperator "++" conceal cchar=⧺
-    syntax match scalaNiceOperator "\<forall\>" conceal cchar=∀
-    syntax match scalaNiceOperator "-<" conceal cchar=↢
-    syntax match scalaNiceOperator ">-" conceal cchar=↣
-    syntax match scalaNiceOperator "-<<" conceal cchar=⤛
-    syntax match scalaNiceOperator ">>-" conceal cchar=⤜
+    syntax match scalaNiceOperator "++" conceal cchar=⧺
+    syntax match scalaNiceOperator "forAll" conceal cchar=∀
 
     "syntax match scalaNiceOperator /\s\.\s/ms=s+1,me=e-1 conceal cchar=∘
     syntax match scalaNiceOperator "map" conceal cchar=∘
-    syntax match scalaNiceOperator "flatMap" conceal cchar=∗
+    syntax match scalaNiceOperator "flatMap" conceal cchar=⤜
 
     syntax match scalaNiceOperator "`exists`" conceal cchar=∈
 endif

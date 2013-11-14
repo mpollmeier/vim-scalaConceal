@@ -2,25 +2,33 @@ This syntax file displays unicode characters for some Scala operators and
 built-in functions, turning the following:
 
 ```scala
-  foo map bar
   foo =>
   foo <- bar
   foo -> bar
   2 <= 5
   5 >= 2
   2 == 2
+  2 === 2l
+  foo && bar
+  foo || bar
+  foo map bar
+  foo flatMap bar
 ```
 
 into
 
 ```scala
-  foo ∘ bar
   foo ⇒
   foo ← bar
   foo → bar
   2 ≤ 5
   5 ≥ 2
-  2 ≡ 2
+  2 ≟ 2
+  2 ≡ 2l
+  foo ∧ bar
+  foo ∨ bar
+  foo ∘ bar
+  foo ⤜ bar
 ```
 
 

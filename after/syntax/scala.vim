@@ -68,7 +68,7 @@ if s:extraConceal
     syntax match scalaNiceOperator "\:\:" conceal cchar=∷
 
     syntax match scalaNiceOperator "++" conceal cchar=⧺
-    syntax match scalaNiceOperator "forAll" conceal cchar=∀
+    syntax match scalaNiceOperator "forall" conceal cchar=∀
 
     "syntax match scalaNiceOperator /\s\.\s/ms=s+1,me=e-1 conceal cchar=∘
     syntax match scalaNiceOperator "map" conceal cchar=∘

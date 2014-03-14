@@ -31,8 +31,8 @@ endif
 
 syntax match scalaNiceOperator "<-" conceal cchar=←
 syntax match scalaNiceOperator "->" conceal cchar=→
-syntax match scalaNiceOperator "===" conceal cchar=≡
 syntax match scalaNiceOperator "==" conceal cchar=≟
+syntax match scalaNiceOperator "===" conceal cchar=≡
 syntax match scalaNiceOperator "!=" conceal cchar=≠
 syntax match scalaNiceOperator ">>" conceal cchar=»
 syntax match scalaNiceOperator "&&" conceal cchar=∧

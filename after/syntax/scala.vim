@@ -72,8 +72,8 @@ if s:extraConceal
     syntax match scalaNiceOperator "forall" conceal cchar=∀
 
     "syntax match scalaNiceOperator /\s\.\s/ms=s+1,me=e-1 conceal cchar=∘
-    syntax match scalaNiceOperator "map\ze[ ]" conceal cchar=∘
-    syntax match scalaNiceOperator "flatMap" conceal cchar=⤜
+    syntax match scalaNiceOperator "map\ze[ ({]" conceal cchar=∘
+    syntax match scalaNiceOperator "flatMap\ze[ ({]" conceal cchar=⤜
 
     syntax match scalaNiceOperator "exists" conceal cchar=∈
 endif

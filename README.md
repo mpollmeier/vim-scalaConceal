@@ -9,6 +9,8 @@ built-in functions, turning the following:
   5 >= 2
   2 == 2
   2 === 2l
+  2 != 3
+  2 =/= 2l
   foo && bar
   foo || bar
   foo map bar
@@ -25,6 +27,8 @@ into
   5 ≥ 2
   2 ≟ 2
   2 ≡ 2l
+  2 ≠ 3
+  2 ≢ 2l
   foo ∧ bar
   foo ∨ bar
   foo ∘ bar
